@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAGS (REQUIRED BY INSTRUCTIONS) -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal website of Gabriel Loor created to demonstrate HTML meta tags and web hosting.">
+  <meta name="keywords" content="Personal Website, HTML, Meta Tags, Student Project">
+  <meta name="author" content="Gabriel Loor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gabriel Loor | Personal Website</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+
+    /* Header */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://i.pinimg.com/originals/83/f8/96/83f896f3961a38b25ab8830f42d75923.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 50px;
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Columns */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+
+    /* Cards */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    /* Clear floats */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>My Personal Website</h1>
+    <p>Gabriel Neilsson R. Loor</p>
+  </div>
+
+  <div class="topnav">
+    <a href="https://www.facebook.com/gab.loor.2025" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/loorgabbie/" target="_blank">Instagram</a>
+    <a href="https://open.spotify.com/playlist/670Rg3Bn6g1w0gIzyQBiNJ" target="_blank">Spotify</a>
+  </div>
+
+  <div class="row">
+
+    <!-- LEFT COLUMN -->
+    <div class="leftcolumn">
+
+      <div class="card">
+        <h2>Welcome</h2>
+        <h5>Personal Website Project</h5>
+        <img src="https://giffiles.alphacoders.com/222/222967.gif"
+             style="width:100%; height:200px; object-fit:cover; border-radius:5px;">
+        <p>This website was created as part of an activity to demonstrate the use of HTML meta tags.</p>
+      </div>
+
+      <div class="card">
+        <h2>About This Project</h2>
+        <h5>HTML Meta Tags & Hosting</h5>
+        <img src="https://64.media.tumblr.com/b63b9f2f53c140771234ebab55f941d9/c763cac9fe3ea87e-1f/s540x810/3bc64a55c47b80473cf8e327e32620b0c024db1f.gif"
+             style="width:100%; height:200px; object-fit:cover; border-radius:5px;">
+        <p>This page includes meta tags such as description, keywords, author, and viewport.</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="rightcolumn">
+
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="https://cdn.dribbble.com/userupload/41943848/file/original-4d5f6449a01563f617d0c873a8fd9a7d.gif"
+             style="width:100%; height:100px; object-fit:cover; border-radius:5px;">
+        <p>I am a student learning basic web development using HTML and CSS.</p>
+      </div>
+
+      <div class="card">
+        <h3>Interests</h3>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/37cd4555407107.5982f6ec40d7e.gif"
+             style="width:100%; height:100px; object-fit:cover; border-radius:5px; margin-bottom:10px;">
+        <img src="https://i.pinimg.com/originals/6f/94/bc/6f94bc83f0b71571c7317ce76605ced6.gif"
+             style="width:100%; height:100px; object-fit:cover; border-radius:5px;">
+      </div>
+
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>@loorgabbie on Instagram</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>End of Page</h2>
+    <p>HTML Meta Tags Project</p>
+  </div>
+
+</body>
+</html>
